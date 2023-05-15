@@ -111,22 +111,22 @@ function gauge(input) {
           mode: "gauge+number+delta",
           value: firstGauge.wfreq,
           title: { text: "Wash Frequency", font: {size: 22}},
-          delta: { reference: 2, increasing: {color: "#3f37c9"}},
+          delta: { reference: 2, increasing: {color: "black"}},
           gauge: {
-              axis: {range: [null, 9], tickwidth: 1, tickcolor: "#480ca8"},
-              bar: {color: "darkblue"},
+              axis: {range: [null, 9], tickwidth: 1, tickcolor: "black"},
+              bar: {color: "darkGray"},
               bgcolor: "#4cc9f0",
-              bordercolor: "gray",
+              bordercolor: "black",
               steps: [
-                  { range: [0, 1], color: "#586BA4" },
-                  { range: [1, 2], color: "#F5DD90" },
-                  { range: [2, 3], color: "586BA4" },
-                  { range: [3, 4], color: "#F5DD90" },
-                  { range: [4, 5], color: "586BA4" },
-                  { range: [5, 6], color: "#F5DD90" },
-                  { range: [6, 7], color: "586BA4" },
-                  { range: [7, 8], color: "#F5DD90" },
-                  { range: [8, 9], color: "586BA4" }
+                  { range: [0, 1], color: "#DDBEA9" },
+                  { range: [1, 2], color: "#A08060" },
+                  { range: [2, 3], color: "#8B7355" },
+                  { range: [3, 4], color: "#F5DEB3" },
+                  { range: [4, 5], color: "#F0E68C" },
+                  { range: [5, 6], color: "#C2B280" },
+                  { range: [6, 7], color: "#E6D4A8" },
+                  { range: [7, 8], color: "#E0CDA9" },
+                  { range: [8, 9], color: "#F5F5DC" }
     
               ],
               
@@ -138,8 +138,8 @@ function gauge(input) {
           width: 400,
           height: 280,
           margin: { t: 25, r: 25, l: 25, b: 25 },
-          paper_bgcolor: "lavender",
-          font: { color: "darkblue", family: "Arial" }
+          paper_bgcolor: "white",
+          font: { color: "#C2B280", family: "Arial" }
         };
       Plotly.newPlot("gauge", dictGauge,layoutGauge)
   })
